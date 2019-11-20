@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Custom setup notes...
+
+Absolute paths with Angular and Webpack [ref](https://psamsotha.github.io/angular/2017/03/18/angular-webpack-absolute-paths.html): set baseUrl in tsconfig.json
+-- now can use absolute imports everywhere without all that ../../../garbage
+
+Install/enable Bootstrap, FontAwesome: 
+yarn add bootstrap
+yarn add font-awesome
+add imports to styles.scss 
+
+Using Sass with the Angular CLI [ref](https://scotch.io/tutorials/using-sass-with-the-angular-cli): create src/assets/scss and put _variables.scss & other imports there, modify styles entry in .angular.json
+component scss files can then just @import '~assets/scss/drag-drop'; 
+-- now everything nice and neat in one place!
