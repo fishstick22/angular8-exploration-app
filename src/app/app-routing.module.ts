@@ -13,7 +13,7 @@ const routes: Routes = [
   // { path: 'communications', loadChildren: './communications/communications.module#CommunicationsModule', canActivate: [AuthGuard] },
   // { path: 'programs',       loadChildren: './programs/programs.module#ProgramsModule', canActivate: [AuthGuard] },
   // { path: 'clients',        loadChildren: './clients/clients.module#ClientsModule', canActivate: [AuthGuard] },
-  // { path: 'shared-test',    loadChildren: './shared/shared.module#SharedModule' },
+  { path: 'shared-test',    loadChildren: './shared/shared.module#SharedModule' },
   // { path: 'callback',       component: CallbackComponent },
   { path: '**',             component: PageNotFoundComponent }
 ];

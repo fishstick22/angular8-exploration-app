@@ -20,6 +20,18 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
+    // https://stackoverflow.com/questions/44460733/how-to-configure-karma-to-include-global-scss-files-for-an-angular-cli-project/44498689#44498689
+    // files: [
+    //   { pattern: './src/test.ts', watched: false },
+    //   { pattern: './src/dummy.scss', watched: true,  included: true, served: true },
+    //   { pattern: './src/styles.scss', watched: true,  included: true, served: true }
+    // ],
+    // preprocessors: {
+    //   './src/test.ts': ['@angular/cli'],
+    //   './src/dummy.scss': ['scss'],
+    //   './src/styles.scss': ['scss']
+    // },
+
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
