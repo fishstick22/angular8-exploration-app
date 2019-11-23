@@ -39,3 +39,4 @@ add imports to styles.scss
 Using Sass with the Angular CLI [ref](https://scotch.io/tutorials/using-sass-with-the-angular-cli): create src/assets/scss and put _variables.scss & other imports there, modify styles entry in .angular.json
 component scss files can then just @import '~assets/scss/drag-drop'; 
 -- now everything nice and neat in one place!
+#branchingandmerging
