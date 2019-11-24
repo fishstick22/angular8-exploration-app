@@ -39,4 +39,6 @@ add imports to styles.scss
 Using Sass with the Angular CLI [ref](https://scotch.io/tutorials/using-sass-with-the-angular-cli): create src/assets/scss and put _variables.scss & other imports there, modify styles entry in .angular.json
 component scss files can then just @import '~assets/scss/drag-drop'; 
 -- now everything nice and neat in one place!
-#branchingandmerging
+
+Testing folder [ref](https://angular.io/guide/testing#stubbing-the-routerlink): src/testing folder contains helpers and routerlink stub directive for test cases
+this must be added to the src/tsconfig.app.json exclude "**/testing/*.ts"
