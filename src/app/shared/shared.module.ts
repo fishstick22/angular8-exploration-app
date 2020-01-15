@@ -5,6 +5,7 @@ import { FormsModule,
 import { HttpClientModule    } from '@angular/common/http';
 
 import { NgbModule           } from '@ng-bootstrap/ng-bootstrap';
+import { NgSelectModule      } from '@ng-select/ng-select';
 
 import { routedComponents,
          SharedRoutingModule } from './shared-routing.module';
@@ -21,7 +22,7 @@ import { SortableTableDirective } from './directives/sortable-table.directive';
 
 @NgModule({
   declarations: [
-    //SharedComponent
+    // SharedComponent
     routedComponents,
     // exported components
 
@@ -39,6 +40,7 @@ import { SortableTableDirective } from './directives/sortable-table.directive';
     FormsModule, ReactiveFormsModule,
     HttpClientModule,
     NgbModule,
+    NgSelectModule,
     SharedRoutingModule
   ]
 })
