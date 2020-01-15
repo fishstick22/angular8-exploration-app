@@ -6,6 +6,17 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { SharedComponent } from './shared.component';
 
 @Component({
+  selector: 'ng-select',
+  template: 'dummy component for testing'
+})
+export class NgSelectStubComponent {
+  @Input() items: string[];
+  @Input() bindLabel: string;
+  @Input() bindValue: string;
+
+}
+
+@Component({
   selector: 'app-drag-drop-test',
   template: `dummy testing component`
 })
@@ -26,8 +37,10 @@ describe('SharedComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         SharedComponent,
+        NgSelectStubComponent,
         DragDropStubComponent,
-        ClickOutsideStubComponent ]
+        ClickOutsideStubComponent ],
+      imports: [ HttpClientModule, FormsModule ]
     })
     .compileComponents();
   }));

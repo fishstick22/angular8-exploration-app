@@ -10,7 +10,7 @@
     <ng-select [items]="people"
                bindLabel="name"
                bindValue="id"
-               [(ngModel)]="selectedPersonId">
+               [(ngModel)]="selectedPersonId" ngDefaultControl>
     </ng-select>
     
     <hr>
@@ -20,7 +20,7 @@
     </p>
     
     <ng-select [items]="simpleItems"
-               [(ngModel)]="selectedSimpleItem">
+               [(ngModel)]="selectedSimpleItem" ngDefaultControl>
     </ng-select>
     <app-drag-drop-test></app-drag-drop-test>
     <app-click-outside-test></app-click-outside-test>

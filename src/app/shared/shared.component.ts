@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService, Person } from './data.service';
+import { DataService, Person } from './services/data.service';
 
 // https://stackblitz.com/run?file=src%2Fdata-source-array-example.component.ts
 @Component({
