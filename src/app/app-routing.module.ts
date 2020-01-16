@@ -15,6 +15,8 @@ const routes: Routes = [
   // { path: 'clients',        loadChildren: './clients/clients.module#ClientsModule', canActivate: [AuthGuard] },
   { path: 'shared-test',    loadChildren: './shared/shared.module#SharedModule' },
   // { path: 'callback',       component: CallbackComponent },
+
+  { path: 'explore', loadChildren: () => import('./explore/explore.module').then(m => m.ExploreModule) },
   { path: '**',             component: PageNotFoundComponent }
 ];
 

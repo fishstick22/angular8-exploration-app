@@ -6,6 +6,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { SharedComponent } from './shared.component';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'ng-select',
   template: 'dummy component for testing'
 })
