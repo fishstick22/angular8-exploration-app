@@ -1,6 +1,21 @@
+import { Component, Input, Injectable } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ExploreComponent } from './explore.component';
+
+@Component({
+  // tslint:disable-next-line:component-selector
+  selector: 'ng-select',
+  template: 'dummy component for testing'
+})
+export class NgSelectStubComponent {
+  @Input() items: string[];
+  @Input() bindLabel: string;
+  @Input() bindValue: string;
+
+}
 
 describe('ExploreComponent', () => {
   let component: ExploreComponent;
@@ -8,7 +23,10 @@ describe('ExploreComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExploreComponent ]
+      declarations: [
+        ExploreComponent,
+        NgSelectStubComponent ],
+      imports: [ HttpClientModule, FormsModule ]
     })
     .compileComponents();
   }));
