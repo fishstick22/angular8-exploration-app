@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NgbDate, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { FormsModule,
          ReactiveFormsModule } from '@angular/forms';
@@ -12,6 +13,7 @@ import { ExploreComponent } from './explore.component';
 @NgModule({
   declarations: [ExploreComponent],
   imports: [
+    NgbModule,
     CommonModule,
     FormsModule, ReactiveFormsModule,
     NgSelectModule,

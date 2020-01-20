@@ -2,6 +2,7 @@ import { Component, Input, Injectable } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgbDate, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ExploreComponent } from './explore.component';
 
@@ -26,7 +27,7 @@ describe('ExploreComponent', () => {
       declarations: [
         ExploreComponent,
         NgSelectStubComponent ],
-      imports: [ HttpClientModule, FormsModule ]
+      imports: [ HttpClientModule, FormsModule, NgbModule ]
     })
     .compileComponents();
   }));
